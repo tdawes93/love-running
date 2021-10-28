@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: none;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     color: #3a3a3a;
 }
 
-/* Headings and logl */
+/* Headings and logo */
 
 h1,
 h2 {
@@ -27,6 +27,8 @@ h2 {
     font-size: 280%;
     margin-left: 30px;
 }
+
+/*navigation links */
 
 #menu {
     font-size: 110%;
@@ -214,6 +216,8 @@ hr {
     color: #fafafa;
 }
 
+/*footer*/
+
 footer {
     height: 150px;
 }
@@ -222,7 +226,7 @@ footer {
     text-align: center;
 }
 
-.social-networks li {
+.social-networks > li {
     display: inline;
 }
 
@@ -239,7 +243,7 @@ footer {
     clear: both;
     line-height: 0;
     column-count: 4;
-    column-gap: 0px;
+    column-gap: 0;
 }
 
 #photos>img {
@@ -251,7 +255,7 @@ footer {
 /* For larger and medium screens from 1200px wide and down */
 
 @media screen and (max-width: 1200px) {
-    #club ethos {
+    #club-ethos {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
@@ -274,7 +278,6 @@ footer {
         width: 100%;
         float: left;
         padding: 0;
-        padding-bottom: 200px;
     }
 
     hr {
@@ -291,5 +294,32 @@ footer {
         margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading,
+    .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2,
+    .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p,
+    .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
     }
 }
