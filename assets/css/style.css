@@ -226,7 +226,7 @@ footer {
     text-align: center;
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline;
 }
 
@@ -280,7 +280,7 @@ footer {
         padding: 0;
     }
 
-    #times > div {
+    #times>div {
         width: 100%;
         clear: both;
         height: 150px;
@@ -328,5 +328,17 @@ footer {
     .right-about-heading p {
         text-align: center;
         padding: 0 20px;
+    }
+
+    #photos {
+        column-count: 3;
+    }
+}
+
+/*for small screens 800px wide and down*/
+
+@media screen and (max-width:800px) {
+    #photos {
+        column-count: 2;
     }
 }
